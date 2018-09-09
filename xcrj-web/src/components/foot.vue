@@ -77,20 +77,20 @@ export default {
                 font-size :0.27rem;
                 padding:0.25rem 0;
                 text-align :center;
-                color :#009fe9;
+                color :#666665;
             .item
                 padding:0.1rem 0;
                 font-size:0.24rem;
-                color :#009fe9;
+                color :#666665;
             .item:hover span
                 color:#fff;
                 cursor :pointer;
         .cont-bottom
             width :100%;
             text-align :center;
-            border-top:0.02rem solid rgba(255,255,255,0.8);
+            border-top:0.02rem solid #666665;
             padding-top :0.3rem ;
             .copy-cont
-                color :rgba(255,255,255,0.8); 
+                color :#666665; 
 
 </style>

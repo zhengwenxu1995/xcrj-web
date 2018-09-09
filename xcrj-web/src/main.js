@@ -5,6 +5,10 @@ import App from './App'
 import router from './router'
 import "@/assets/style/reset.css"
 import { store } from "./store/store.js"
+import vueAwesomeSwiper from "vue-awesome-swiper"
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(vueAwesomeSwiper)
 
 Vue.config.productionTip = false
 

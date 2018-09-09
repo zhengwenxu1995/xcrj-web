@@ -80,19 +80,20 @@ export default {
             .nav
                 padding : 0.3rem 1rem;
                 float :left;
-                margin-left :4rem;
+                margin-left :2rem;
             .nav-cont
                 display :flex;
                 .nav-item
-                    padding:0.1rem 0.5rem;
-                    height :0.5rem;
                     margin-left :0.35rem;
                     line-height :0.5rem;
-                    text-align :center;
+                    //text-align :center;
                     border :0.02rem solid #fff;
                     border-radius :0.7rem;
                     transition :border-color 0.3s;
                 .nav-item a
+                    display :inline-block;
+                    padding:0.1rem 0.5rem;
+                    height :0.5rem;
                     color:#009fe9;
                 .nav-item:hover
                     border-color : #009fe9;
