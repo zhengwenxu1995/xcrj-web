@@ -29,13 +29,6 @@ export default {
         return{
              carousel:[
                 {
-                    imgPath:"/static/image/carouse1.jpg",
-                    title:"定制网站建设",
-                    detail:"多年专业建站经验，您所有的建站烦恼，我们用设计提升企业和产品，我们是团结的团队，是服务保障系统",
-                    btnShow:true,
-                    btnCont:"了解详情"
-                },
-                {
                     imgPath:"/static/image/carouse2.jpg",
                     title:"定制网站建设",
                     detail:"多年专业建站经验，您所有的建站烦恼，我们用设计提升企业和产品，我们是团结的团队，是服务保障系统",
@@ -93,6 +86,7 @@ export default {
         position :relative;
         overflow :hidden;
         .img-carousel
+            width :100%;
             height :12rem;
         .carousel-cont
             position :absolute;
