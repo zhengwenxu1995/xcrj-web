@@ -55,7 +55,7 @@ export default {
                 autoplay: {
                     delay: 5000,
                     stopOnLastSlide: false,
-                    disableOnInteraction: true,
+                    disableOnInteraction: false
                     },
                 effect : 'cube',
                 cubeEffect: {
