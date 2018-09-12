@@ -78,21 +78,21 @@ export default {
 
 <style lang="stylus" scoped>
 .cont
-    height :12rem;
+    height :14rem;
     width:100%;
     .carousel-frame
         width :100%;
-        height :12rem;
+        height :14rem;
         position :relative;
         overflow :hidden;
         .img-carousel
             width :100%;
-            height :12rem;
+            height :14rem;
         .carousel-cont
             position :absolute;
             width :8.5rem;
             z-index :2018;
-            top:5rem;
+            top:5.5rem;
             left :20%;
             background :rgba(3,3,3,0.5)
             border-radius :0.2rem;

@@ -57,6 +57,7 @@ export default {
     width 100%;
     height :1.5rem;
     background :#fff;
+    padding:0.5rem 0;
     .header-frame
         width :90%;
         margin :0 auto;
