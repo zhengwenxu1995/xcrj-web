@@ -14,20 +14,22 @@
                            <a href="javascript:;">
                                 <h2>科学家：看3D电影能让你的大脑更灵活</h2>
                            </a>
-                            <p>
+                            <div>
+                                <p>
                                 据新华社看3D电影让人享受新奇的视觉体验，英国伦敦戈德史密斯大学一项研究显示，这还有助脑力提升。讯科技讯（范晓东）5月26日，实时社交视频平台天鸽互动控股今日公布截至2015年截止3月31日度季度业绩。腾讯科技讯（范晓东）5月26日，实时社交视频平台天鸽互动控股今日公布截至2015年截止3月31日度季度业绩。...讯科技讯（范晓东）5月26日，实时社交视频平台天鸽互动控股今日公布截至2015年截止3月31日度季度业绩。腾讯科技讯（范晓东）5月26日，实时社交视频平台天鸽互动控股今日公布截至2015年截止3月31日度季度业绩。...讯科技讯（范晓东）5月26日，实时社交视频平台天鸽互动控股今日公布截至2015年截止3月31日度季度业绩。腾讯科技讯（范晓东）5月26日，实时社交视频平台天鸽互动控股今日公布截至2015年截止3月31日度季度业绩。
                             </p>
+                            </div>
                         </li>
                     </ul>
                     <ul class="news-bottom">
-                        <li>
+                        <li class="time">
                             <ul class="time-list">
                                 <li>2017/03/27</li>
                                 <li>2017/03/27</li>
                                 <li>2017/03/27</li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="detail">
                             <ul class="detail-list">
                                 <li>
                                     <a href="javascript:;">
@@ -109,6 +111,7 @@ export default{
                 .news-top
                     width :100%;
                     display :flex;
+                    margin-bottom :1.5rem;
                     .news-img
                         width :10rem;
                         flex :0.7;
@@ -117,7 +120,55 @@ export default{
                         flex :1.3
                         padding:0 4rem 0 0;
                         box-sizing :border-box;
-                    
-
-                
+                    .news-msg a h2
+                        font-size :0.33rem;
+                        color :#333;
+                        font-weight :600;
+                        font-family: "微软雅黑";
+                        vertical-align :top; 
+                        padding-bottom :0.5rem;
+                    .news-msg p
+                        line-height :0.9rem;
+                        letter-spacing :0.05rem;
+                        text-indent :0.6rem;
+                        text-align :justify;
+                        color: rgb(102, 102, 102);
+                .news-bottom
+                    display :flex;
+                    .time
+                        flex :0.4;
+                        .time-list
+                            border-right :0.02rem solid #ccc;
+                        .time-list li
+                            color:#666;
+                            position :relative;
+                            height :2rem
+                            padding:00 0.6rem;
+                            box-sizing :border-box;
+                            line-height :2rem;
+                        .time-list li:after
+                            content  :"";
+                            display :block;
+                            width :0.2rem;
+                            height :0.2rem;
+                            background :#bababa;
+                            border:0.05rem solid #f4f4f4;
+                            border-radius :100%;
+                            position :absolute;
+                            right :-0.15rem;
+                            top:50%;
+                            margin-top:-0.1rem;
+                    .detail
+                        flex :4.6;
+                        padding-left :0.8rem;
+                        .detail-list li
+                            height :2rem;
+                        .detail-list li a h1
+                            font-size :0.32rem;
+                            color:#666;
+                            padding:0.6rem 0.2rem 0.4rem 0;
+                        .detail-list li a h1:hover
+                            color:#f13a3a;   
+                        .detail-list li p
+                            color #333;
 </style>

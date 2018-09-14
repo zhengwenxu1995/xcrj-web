@@ -8,6 +8,7 @@
         <cxrj-slogan></cxrj-slogan>
         <cxrj-news></cxrj-news>
         <cxrj-footer></cxrj-footer>
+        <cxrj-case-browse-home v-if="false"></cxrj-case-browse-home>
     </div>
 </template>
 
@@ -21,6 +22,7 @@ import CxrjTeam from "@/pages/home/component/teamHome.vue"
 import CxrjCase from "@/pages/home/component/caseHome.vue"
 import CxrjSlogan from "@/pages/home/component/sloganHome.vue"
 import CxrjNews from "@/pages/home/component/newsHome.vue"
+import CxrjCaseBrowseHome from "@/pages/home/component/caseBrowseHome.vue"
 export default {
     data(){
         return{
@@ -35,7 +37,8 @@ export default {
         CxrjTeam,
         CxrjCase,
         CxrjSlogan,
-        CxrjNews
+        CxrjNews,
+        CxrjCaseBrowseHome
     }
 }
 </script>

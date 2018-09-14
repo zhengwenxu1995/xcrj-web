@@ -37,9 +37,12 @@ export default {
     computed:{
         navMenu(){
             return this.$store.state.nav.navMenu;
+           //return this.$store.getters.getNowSelect
         },
         nowSelect(){
-            return this.$store.state.nav.nowSelect;
+            // console.log(this.$store.state.nav.getters)
+           return this.$store.state.nav.nowSelect;
+           //return this.$store.getters.getNowSelect
         }
     },
     methods:{
