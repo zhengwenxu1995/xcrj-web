@@ -85,11 +85,11 @@ export default{
 <style lang="stylus" scoped>
 .template-cont
     width :100%;
-    height :20.9rem;
+    height :21rem;
     overflow :hidden;
     .news-frame
         height :0;
-        padding-bottom :20.9rem;
+        padding-bottom :21rem;
         width :90%;
         margin :0 auto;
         .news-cont
@@ -128,7 +128,7 @@ export default{
                         vertical-align :top; 
                         padding-bottom :0.5rem;
                     .news-msg p
-                        line-height :0.9rem;
+                        line-height :0.8rem;
                         letter-spacing :0.05rem;
                         text-indent :0.6rem;
                         text-align :justify;
@@ -166,7 +166,7 @@ export default{
                         .detail-list li a h1
                             font-size :0.32rem;
                             color:#666;
-                            padding:0.6rem 0.2rem 0.4rem 0;
+                            padding:0.4rem 0.2rem 0.4rem 0;
                         .detail-list li a h1:hover
                             color:#f13a3a;   
                         .detail-list li p

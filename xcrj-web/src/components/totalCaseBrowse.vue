@@ -3,13 +3,15 @@
         <div class="close">
             <i class="iconfont close-btn">&#xe6df;</i>
         </div>
-        
+        <div class="">
+
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    CxrjCaseBrowseHome:"CxrjCaseBrowseHome",
+    CxrjCaseBrowse:"CxrjCaseBrowse",
     data(){
         return {
 

@@ -8,6 +8,7 @@ import { store } from "./store/store.js"
 import vueAwesomeSwiper from "vue-awesome-swiper"
 import 'swiper/dist/css/swiper.css'
 import "@/assets/iconfont/iconfont.css"
+// import "@babel/polyfill"
 
 Vue.use(vueAwesomeSwiper)
 

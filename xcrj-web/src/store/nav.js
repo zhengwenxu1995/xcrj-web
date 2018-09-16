@@ -19,19 +19,19 @@ export const navMenuModule = {
             {navName:"在线留言",path:"/onlinemsg"}
         ]
      },
-     getters:{
-        getNowSelect(state){
-            let n= window.localStorage.nowSelect;
-            return state.nowSelect==window.localStorage.nowSelect == undefined ? 0: parseInt(n);
-        }
-     },
+    //  getters:{
+    //     getNowSelect(state){
+    //         let n= window.localStorage.nowSelect;
+    //         return state.nowSelect==window.localStorage.nowSelect == undefined ? 0: parseInt(n);
+    //     }
+    //  },
      mutations:{
          changSelect(state,select){
             
             window.localStorage.setItem('nowSelect', select);
-                    defSelect=window.localStorage.nowSelect
+            //defSelect=window.localStorage.nowSelect
            
-            // state.nowSelect=select;
+            state.nowSelect=select;
             // let n= window.localStorage.nowSelect;
             //state.nowSelect = window.localStorage.nowSelect;
          }
