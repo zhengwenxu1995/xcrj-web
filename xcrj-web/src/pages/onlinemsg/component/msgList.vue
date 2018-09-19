@@ -40,7 +40,7 @@
 
 <script>
 export default {
-    CxrjMsgList:"CxrjMsgList",
+    XcrjMsgList:"XcrjMsgList",
     data(){
         return{
             nowPage:1,

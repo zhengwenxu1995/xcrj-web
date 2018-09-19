@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    CxrjMsgFrom:"CxrjMsgFrom",
+    XcrjMsgFrom:"XcrjMsgFrom",
     data(){
         return {
 

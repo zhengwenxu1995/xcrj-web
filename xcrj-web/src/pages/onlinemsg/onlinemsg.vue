@@ -1,19 +1,19 @@
 <template>
     <div class="cont">
-        <cxrj-header></cxrj-header>
-        <cxrj-total-carouse></cxrj-total-carouse>
-        <cxrj-msg-from></cxrj-msg-from>
-        <cxrj-msg-list></cxrj-msg-list>
-        <cxrj-footer></cxrj-footer>
+        <xcrj-header></xcrj-header>
+        <xcrj-total-carouse></xcrj-total-carouse>
+        <xcrj-msg-from></xcrj-msg-from>
+        <xcrj-msg-list></xcrj-msg-list>
+        <xcrj-footer></xcrj-footer>
     </div>
 </template>
 
 <script>
-import CxrjFooter from "@/components/foot.vue"
-import CxrjHeader from "@/components/navHeader.vue"
-import CxrjTotalCarouse from "@/components/totalCarouse.vue"
-import CxrjMsgFrom from "@/pages/onlinemsg/component/leaveMsgFrom.vue"
-import CxrjMsgList from "@/pages/onlinemsg/component/msgList.vue"
+import XcrjFooter from "@/components/foot.vue"
+import XcrjHeader from "@/components/navHeader.vue"
+import XcrjTotalCarouse from "@/components/totalCarouse.vue"
+import XcrjMsgFrom from "@/pages/onlinemsg/component/leaveMsgFrom.vue"
+import XcrjMsgList from "@/pages/onlinemsg/component/msgList.vue"
 export default {
     data(){
         return{
@@ -21,11 +21,11 @@ export default {
         }
     },
     components:{
-        CxrjHeader,
-        CxrjFooter,
-        CxrjMsgFrom,
-        CxrjMsgList,
-        CxrjTotalCarouse
+        XcrjHeader,
+        XcrjFooter,
+        XcrjMsgFrom,
+        XcrjMsgList,
+        XcrjTotalCarouse
     }
 }
 </script>

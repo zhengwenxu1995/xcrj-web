@@ -27,7 +27,7 @@
 
 <script>
 export default{
-    CxrjTeam:"CxrjTeam",
+    XcrjTeam:"XcrjTeam",
     data(){
         return{
             teamshow:false

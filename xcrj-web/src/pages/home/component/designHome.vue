@@ -58,7 +58,7 @@
 <script>
 
 export default {
-    CxrjDesignHome:"designHome",
+    XcrjDesignHome:"designHome",
     data(){
         return {
             animation:true,

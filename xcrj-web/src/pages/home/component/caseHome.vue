@@ -41,7 +41,7 @@
 
 <script>
 export default{
-    CxrjCase:"CxrjCase",
+    XcrjCase:"XcrjCase",
     data(){
         return{
             

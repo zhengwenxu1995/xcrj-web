@@ -11,7 +11,7 @@
 
 <script>
 export default{
-    CxrjSlogan:"CxrjSlogan",
+    XcrjSlogan:"XcrjSlogan",
     data(){
         return{
 

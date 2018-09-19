@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    CxrjInteractiveProtoDesign:"CxrjInteractiveProtoDesign",
+    XcrjInteractiveProtoDesign:"XcrjInteractiveProtoDesign",
     data(){
         return {
 

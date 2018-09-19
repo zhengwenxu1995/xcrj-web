@@ -1,28 +1,28 @@
 <template>
     <div class="cont">
-        <cxrj-header></cxrj-header>
+        <xcrj-header></xcrj-header>
         <carousel-map-home></carousel-map-home>
-        <cxrj-design-home></cxrj-design-home>
-        <cxrj-team></cxrj-team>
-        <cxrj-case></cxrj-case>
-        <cxrj-slogan></cxrj-slogan>
-        <cxrj-news></cxrj-news>
-        <cxrj-footer></cxrj-footer>
-        <cxrj-case-browse v-if="false"></cxrj-case-browse>
+        <xcrj-design-home></xcrj-design-home>
+        <xcrj-team></xcrj-team>
+        <xcrj-case></xcrj-case>
+        <xcrj-slogan></xcrj-slogan>
+        <xcrj-news></xcrj-news>
+        <xcrj-footer></xcrj-footer>
+        <xcrj-case-browse v-if="false"></xcrj-case-browse>
     </div>
 </template>
 
 <script>
-import CxrjHeader from "@/components/navHeader.vue"
-import CxrjFooter from "@/components/foot.vue"
+import XcrjHeader from "@/components/navHeader.vue"
+import XcrjFooter from "@/components/foot.vue"
 import CarouselMapHome from "@/pages/home/component/carouselMapHome.vue"
-import CxrjDesignHome from "@/pages/home/component/designHome.vue"
+import XcrjDesignHome from "@/pages/home/component/designHome.vue"
 
-import CxrjTeam from "@/pages/home/component/teamHome.vue"
-import CxrjCase from "@/pages/home/component/caseHome.vue"
-import CxrjSlogan from "@/pages/home/component/sloganHome.vue"
-import CxrjNews from "@/pages/home/component/newsHome.vue"
-import CxrjCaseBrowse from "@/components/totalCaseBrowse.vue"
+import XcrjTeam from "@/pages/home/component/teamHome.vue"
+import XcrjCase from "@/pages/home/component/caseHome.vue"
+import XcrjSlogan from "@/pages/home/component/sloganHome.vue"
+import XcrjNews from "@/pages/home/component/newsHome.vue"
+import XcrjCaseBrowse from "@/components/totalCaseBrowse.vue"
 export default {
     data(){
         return{
@@ -30,15 +30,15 @@ export default {
         }
     },
     components:{
-        CxrjHeader,
-        CxrjFooter,
+        XcrjHeader,
+        XcrjFooter,
         CarouselMapHome,
-        CxrjDesignHome,
-        CxrjTeam,
-        CxrjCase,
-        CxrjSlogan,
-        CxrjNews,
-        CxrjCaseBrowse
+        XcrjDesignHome,
+        XcrjTeam,
+        XcrjCase,
+        XcrjSlogan,
+        XcrjNews,
+        XcrjCaseBrowse
     }
 }
 </script>

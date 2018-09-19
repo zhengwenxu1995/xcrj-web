@@ -1,7 +1,7 @@
 let defSelect=0;
 try{
-    if(window.localStorage.nowSelect){
-        defSelect=window.localStorage.nowSelect
+    if(window.sessionStorage.nowSelect){
+        defSelect=window.sessionStorage.nowSelect
     }
 }catch(e){
     console.log(e)
@@ -28,7 +28,8 @@ export const navMenuModule = {
      mutations:{
          changSelect(state,select){
             
-            window.localStorage.setItem('nowSelect', select);
+           // window.localStorage.setItem('nowSelect', select);
+           window.sessionStorage.setItem('nowSelect',select);
             //defSelect=window.localStorage.nowSelect
            
             state.nowSelect=select;

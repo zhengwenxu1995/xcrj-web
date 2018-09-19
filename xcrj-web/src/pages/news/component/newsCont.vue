@@ -73,7 +73,7 @@
 
 <script>
 export default{
-    CxrjNews:"CxrjNews",
+    XcrjNews:"XcrjNews",
     data(){
         return{
             

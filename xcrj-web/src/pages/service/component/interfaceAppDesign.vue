@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    CxrjInterfaceAppDesign:"CxrjInterfaceAppDesign",
+    XcrjInterfaceAppDesign:"XcrjInterfaceAppDesign",
     data(){
         return {
 

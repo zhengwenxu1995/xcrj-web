@@ -1,22 +1,22 @@
 <template>
     <div class="cont">
-        <cxrj-header></cxrj-header>
-        <cxrj-total-carouse></cxrj-total-carouse>
-        <cxrj-we-sevice></cxrj-we-sevice>
-        <cxrj-interactive-proto-design></cxrj-interactive-proto-design>
-        <cxrj-interface-app-design></cxrj-interface-app-design>
+        <xcrj-header></xcrj-header>
+        <xcrj-total-carouse></xcrj-total-carouse>
+        <xcrj-we-sevice></xcrj-we-sevice>
+        <xcrj-interactive-proto-design></xcrj-interactive-proto-design>
+        <xcrj-interface-app-design></xcrj-interface-app-design>
 
-        <cxrj-footer></cxrj-footer>
+        <xcrj-footer></xcrj-footer>
     </div>
 </template>
 
 <script>
-import CxrjFooter from "@/components/foot.vue"
-import CxrjHeader from "@/components/navHeader.vue"
-import CxrjTotalCarouse from "@/components/totalCarouse.vue"
-import CxrjInteractiveProtoDesign from "@/pages/service/component/interactiveProtoDesign.vue"
-import CxrjInterfaceAppDesign from "@/pages/service/component/interfaceAppDesign.vue"
-import CxrjWeSevice from "@/pages/service/component/weSevice.vue"
+import XcrjFooter from "@/components/foot.vue"
+import XcrjHeader from "@/components/navHeader.vue"
+import XcrjTotalCarouse from "@/components/totalCarouse.vue"
+import XcrjInteractiveProtoDesign from "@/pages/service/component/interactiveProtoDesign.vue"
+import XcrjInterfaceAppDesign from "@/pages/service/component/interfaceAppDesign.vue"
+import XcrjWeSevice from "@/pages/service/component/weSevice.vue"
 export default {
     data(){
         return{
@@ -24,12 +24,12 @@ export default {
         }
     },
     components:{
-        CxrjHeader,
-        CxrjFooter,
-        CxrjTotalCarouse,
-        CxrjInteractiveProtoDesign,
-        CxrjInterfaceAppDesign,
-        CxrjWeSevice
+        XcrjHeader,
+        XcrjFooter,
+        XcrjTotalCarouse,
+        XcrjInteractiveProtoDesign,
+        XcrjInterfaceAppDesign,
+        XcrjWeSevice
     }
 }
 </script>

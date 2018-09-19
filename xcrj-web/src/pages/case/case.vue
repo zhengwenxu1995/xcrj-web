@@ -1,19 +1,19 @@
 <template>
     <div class="cont">
-        <cxrj-header></cxrj-header>
-        <cxrj-total-carouse></cxrj-total-carouse>
-        <cxrj-case-list></cxrj-case-list>
-        <cxrj-footer></cxrj-footer>
-        <cxrj-case-browse v-if="false"></cxrj-case-browse>
+        <xcrj-header></xcrj-header>
+        <xcrj-total-carouse></xcrj-total-carouse>
+        <xcrj-case-list></xcrj-case-list>
+        <xcrj-footer></xcrj-footer>
+        <xcrj-case-browse v-if="false"></xcrj-case-browse>
     </div>
 </template>
 
 <script>
-import CxrjFooter from "@/components/foot.vue"
-import CxrjHeader from "@/components/navHeader.vue"
-import CxrjTotalCarouse from "@/components/totalCarouse.vue"
-import CxrjCaseBrowse from "@/components/totalCaseBrowse.vue"
-import CxrjCaseList from "@/pages/case/component/caseList.vue"
+import XcrjFooter from "@/components/foot.vue"
+import XcrjHeader from "@/components/navHeader.vue"
+import XcrjTotalCarouse from "@/components/totalCarouse.vue"
+import XcrjCaseBrowse from "@/components/totalCaseBrowse.vue"
+import XcrjCaseList from "@/pages/case/component/caseList.vue"
 export default {
     data(){
         return{
@@ -21,11 +21,11 @@ export default {
         }
     },
     components:{
-        CxrjHeader,
-        CxrjFooter,
-        CxrjTotalCarouse,
-        CxrjCaseBrowse,
-        CxrjCaseList
+        XcrjHeader,
+        XcrjFooter,
+        XcrjTotalCarouse,
+        XcrjCaseBrowse,
+        XcrjCaseList
     }
 }
 </script>

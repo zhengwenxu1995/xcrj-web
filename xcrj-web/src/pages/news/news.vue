@@ -1,17 +1,17 @@
 <template>
     <div class="cont">
-        <cxrj-header></cxrj-header>
-        <cxrj-total-carouse></cxrj-total-carouse>
-        <cxrj-news></cxrj-news>
-        <cxrj-footer></cxrj-footer>
+        <xcrj-header></xcrj-header>
+        <xcrj-total-carouse></xcrj-total-carouse>
+        <xcrj-news></xcrj-news>
+        <xcrj-footer></xcrj-footer>
     </div>
 </template>
 
 <script>
-import CxrjFooter from "@/components/foot.vue"
-import CxrjHeader from "@/components/navHeader.vue"
-import CxrjTotalCarouse from "@/components/totalCarouse.vue"
-import CxrjNews from "@/pages/news/component/newsCont.vue"
+import XcrjFooter from "@/components/foot.vue"
+import XcrjHeader from "@/components/navHeader.vue"
+import XcrjTotalCarouse from "@/components/totalCarouse.vue"
+import XcrjNews from "@/pages/news/component/newsCont.vue"
 
 export default {
     
@@ -21,10 +21,10 @@ export default {
         }
     },
     components:{
-        CxrjHeader,
-        CxrjFooter,
-        CxrjNews,
-        CxrjTotalCarouse
+        XcrjHeader,
+        XcrjFooter,
+        XcrjNews,
+        XcrjTotalCarouse
     }
 }
 </script>

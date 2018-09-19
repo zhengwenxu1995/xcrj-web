@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import { navMenuModule } from "./nav.js"
+import { caseBrows } from "./caseBrows.js"
 
 Vue.use(Vuex)
 
@@ -8,9 +9,11 @@ Vue.use(Vuex)
 
  export const store=new Vuex.Store({
     modules:{
-        nav:navMenuModule
+        nav:navMenuModule,
+        caseBrows:caseBrows
     }
     
  })
 
  store.state.nav
+ store.state.caseBrowsd

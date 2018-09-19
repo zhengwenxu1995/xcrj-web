@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    CxrjWeSevice:"CxrjWeSevice",
+    XcrjWeSevice:"XcrjWeSevice",
     data(){
         return {
 
