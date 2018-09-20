@@ -70,6 +70,7 @@ export default {
       this.menuSelect = index;
     },
     viewCase(select,index){
+        this.$store.commit("switch",select,index)
         console.log("我是第"+select+"组的第"+index+"张图片")
     }
   }

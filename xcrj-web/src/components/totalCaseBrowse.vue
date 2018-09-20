@@ -1,10 +1,10 @@
 <template>
     <div class="template-cont">
         <div class="close">
-            <i class="iconfont close-btn">&#xe6df;</i>
+            <i class="iconfont close-btn" @click="close">&#xe6df;</i>
         </div>
-        <div class="">
-
+        <div class="img-list">
+            
         </div>
     </div>
 </template>
@@ -17,7 +17,11 @@ export default {
 
         }
     },
-
+    methods:{
+        close(){
+            this.$store.commit("switch");
+        }
+    }
 }
 </script>
 

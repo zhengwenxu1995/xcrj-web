@@ -8,6 +8,7 @@
         <xcrj-slogan></xcrj-slogan>
         <xcrj-news></xcrj-news>
         <xcrj-footer></xcrj-footer>
+        <xcrj-back-top></xcrj-back-top>
         <xcrj-case-browse v-if="false"></xcrj-case-browse>
     </div>
 </template>
@@ -15,6 +16,7 @@
 <script>
 import XcrjHeader from "@/components/navHeader.vue"
 import XcrjFooter from "@/components/foot.vue"
+import XcrjBackTop from "@/components/backTop.vue"
 import CarouselMapHome from "@/pages/home/component/carouselMapHome.vue"
 import XcrjDesignHome from "@/pages/home/component/designHome.vue"
 
@@ -38,7 +40,8 @@ export default {
         XcrjCase,
         XcrjSlogan,
         XcrjNews,
-        XcrjCaseBrowse
+        XcrjCaseBrowse,
+        XcrjBackTop
     }
 }
 </script>

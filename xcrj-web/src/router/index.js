@@ -7,6 +7,7 @@ import Service from "@/pages/service/service.vue"
 import Case  from "@/pages/case/case.vue"
 
 
+
 Vue.use(Router)
 
 export default new Router({
@@ -22,7 +23,19 @@ export default new Router({
     {
       path: '/case',
       name: 'Case',
-      component: Case
+      component: Case,
+      // redirect:"/case/caselist",
+      // children:[
+      //   {
+      //     path: 'caselist',
+      //     //name: 'CaseList',
+      //     component: CaseList,
+      //   },{
+      //     path: 'caselist',
+      //     //name: 'CaseList',
+      //     component: CaseList,
+      //   }
+      // ]
     },
     {
       path: '/news',

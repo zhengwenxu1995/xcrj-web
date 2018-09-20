@@ -16,4 +16,4 @@ Vue.use(Vuex)
  })
 
  store.state.nav
- store.state.caseBrowsd
+ store.state.caseBrows
