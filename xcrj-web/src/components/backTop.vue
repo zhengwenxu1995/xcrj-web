@@ -1,5 +1,5 @@
 <template>
-    <div class="back-top" @click="rollback">
+    <div class="back-top" @click="rollback" >
         <i class="iconfont bt">&#xe63a;</i>
     </div>
 </template>
@@ -13,6 +13,7 @@ export default {
 
         }
     },
+    
     methods:{
         rollback(){
             let scrollToptimer = setInterval(function () {
@@ -27,20 +28,23 @@ export default {
                 clearInterval(scrollToptimer);
             }
         }, 30)
-        },
+        }
 
     },
     mounted(){
-        window.addEventListener("scroll")
-        onscroll(function (e){
+        window.addEventListener("scroll",function (e){
             let distance=document.body.scrollTop || document.documentElement.scrollTop;
-            // if(distance>100){
-
-            // }
-            console.log("aa")
+            if(distance>100){
+                this.$store.commit("backTopStatus",true);
+            }else{
+               this.$store.commit("backTopStatus",false);
+            }
+            console.log(distance)
+            console.log("a")
         })
+        
     }
-}
+};
 </script>
 
 <style lang="stylus" scoped>

@@ -8,7 +8,7 @@
         <xcrj-slogan></xcrj-slogan>
         <xcrj-news></xcrj-news>
         <xcrj-footer></xcrj-footer>
-        <xcrj-back-top></xcrj-back-top>
+        <xcrj-back-top v-if="backTop"></xcrj-back-top>
         <xcrj-case-browse v-if="false"></xcrj-case-browse>
     </div>
 </template>
@@ -27,7 +27,7 @@ import XcrjNews from "@/pages/home/component/newsHome.vue"
 import XcrjCaseBrowse from "@/components/totalCaseBrowse.vue"
 export default {
     data(){
-        return{
+        return {
 
         }
     },
@@ -42,7 +42,12 @@ export default {
         XcrjNews,
         XcrjCaseBrowse,
         XcrjBackTop
-    }
+    },
+    computed:{
+        backTop(){
+            return this.$store.state.nav.backTop;
+        }
+    },
 }
 </script>
 
