@@ -24,41 +24,19 @@
                     <ul class="news-bottom">
                         <li class="time">
                             <ul class="time-list">
-                                <li>2017/03/27</li>
-                                <li>2017/03/27</li>
-                                <li>2017/03/27</li>
+                                <li v-for="(item,index) of time" :key="index">{{item}}</li>
                             </ul>
                         </li>
                         <li class="detail">
                             <ul class="detail-list">
-                                <li>
+                                <li v-for="(item,index) of newsList" :key="index">
                                     <a href="javascript:;">
-                                        <h1>
-                                            永洪科技创始人何春涛：金融机构在大数据时代应如何进步
+                                        <h1 @click="jumpNews(item.title)">
+                                            {{item.title}}
                                         </h1>
                                     </a>
                                     <p>
-                                        在人类社会进入到 大数据时代 后，金融活动对数据的依赖有增无减，众多的金融环节都需要依赖对数据的收集和分析而完成。...
-                                    </p>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <h1>
-                                           看球之余聊聊它 体育行业大数据做了哪些贡献？
-                                        </h1>
-                                    </a>
-                                    <p>
-                                        我们都知道，大数据在数据管理、存储、分析等领域具有得天独厚的优势，这些数据管理技术对于体育赛事的很多细节，对于比赛...
-                                    </p>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <h1>
-                                            如何避免自嗨型的数据分析？你必知的三大法则
-                                        </h1>
-                                    </a>
-                                    <p>
-                                        近日，京东宣布与沃尔玛达成战略合作，在这两家电商和零售巨头的战略合作中，沃尔玛将获得京东增发的约5%股份，而京东将...
+                                       {{item.content}}
                                     </p>
                                 </li>
                             </ul>
@@ -66,7 +44,6 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
@@ -74,9 +51,34 @@
 <script>
 export default{
     XcrjNews:"XcrjNews",
-    data(){
-        return{
-            
+    data () {
+        return {
+            time:[
+                "2017/03/27",
+                "2018/06/22",
+                "2018/07/28"
+            ],
+            newsList:[
+                {
+                    title:"永洪科技创始人何春涛：金融机构在大数据时代应如何进步",
+                    content:"在人类社会进入到 大数据时代 后，金融活动对数据的依赖有增无减，众多的金融环节都需要依赖对数据的收集和分析而完成。..."
+                },
+                {
+                    title:"看球之余聊聊它 体育行业大数据做了哪些贡献？",
+                    content:"我们都知道，大数据在数据管理、存储、分析等领域具有得天独厚的优势，这些数据管理技术对于体育赛事的很多细节，对于比赛..."
+                },
+                {
+                    title:"如何避免自嗨型的数据分析？你必知的三大法则",
+                    content:"近日，京东宣布与沃尔玛达成战略合作，在这两家电商和零售巨头的战略合作中，沃尔玛将获得京东增发的约5%股份，而京东将..."
+                }
+            ]
+        }
+    },
+    methods:{
+        jumpNews(title){
+           //加密 console.log(encodeURIComponent(title))
+           //解密 console.log(decodeURIComponent(encodeURIComponent(title)))
+            this.$router.push({path:"/news/newsCont",query: { title: encodeURIComponent(title) }})
         }
     }
 }    

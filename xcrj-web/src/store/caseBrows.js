@@ -1,10 +1,45 @@
 export const caseBrows={
     state:{
-        showCaseLise:false
+        showCaseLise:false,
+        //backTop:false
+        caseImgList:[
+        {
+            imgPath:[
+            "/static/image/caseInter1.jpg",
+            "/static/image/caseInter2.jpg",
+            "/static/image/caseInter3.jpg",
+            "/static/image/caseInter4.jpg",
+            "/static/image/caseInter5.jpg",
+            "/static/image/caseInter2.jpg",
+        ]},
+        {
+            imgPath:[
+            "/static/image/caseweb1.jpg",
+            "/static/image/caseweb2.jpg",
+            "/static/image/caseweb3.jpg",
+            "/static/image/caseweb4.jpg",
+            "/static/image/caseweb5.jpg",
+            "/static/image/caseweb2.jpg",
+        ]},
+        {
+            imgPath:[
+            "/static/image/caseapp1.jpg",
+            "/static/image/caseapp2.jpg",
+            "/static/image/caseapp3.jpg",
+            "/static/image/caseapp4.jpg",
+            "/static/image/caseapp5.jpg",
+            "/static/image/caseapp2.jpg"
+        ]}
+    ],
+    showImgList:[]
     },
     mutations:{
-        switch(state,select,index){
-            state.showCaseLise=!state.showCaseLise;
+        open(state,select,index){
+            state.showCaseLise=true;
+            state.showImgList=state.caseImgList[select].imgPath
+        },
+        close(state){                           
+                state.showCaseLise=false;
         }
     }
 }

@@ -30,17 +30,17 @@ export default {
              carousel:[
                 {
                     imgPath:"/static/image/carouse2.jpg",
-                    title:"定制网站建设",
+                    title:"新网站建設",
                     detail:"多年专业建站经验，您所有的建站烦恼，我们用设计提升企业和产品，我们是团结的团队，是服务保障系统",
-                    btnShow:false,
-                    btnCont:""
+                    btnShow:true,
+                    btnCont:"联系我们"
                 },
                 {
                     imgPath:"/static/image/carouse3.jpg",
                     title:"定制网站建设",
-                    detail:"多年专业建站经验，您所有的建站烦恼，我们用设计提升企业和产品，我们是团结的团队，是服务保障系统",
-                    btnShow:true,
-                    btnCont:"联系我们"
+                    detail:"我们用设计提升企业和产品价值，我们是信赖的团队，可靠的服务保障系统",
+                    btnShow:false,
+                    btnCont:""
                 }
                 ,{
                     imgPath:"/static/image/carouse4.jpg",

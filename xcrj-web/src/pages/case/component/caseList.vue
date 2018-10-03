@@ -16,11 +16,8 @@
                                         <img :src="items" alt="">
                                     </div>
                                 </li>
-                               
-
                             </ul>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -60,7 +57,7 @@ export default {
               "/static/image/caseapp3.jpg",
               "/static/image/caseapp4.jpg",
               "/static/image/caseapp5.jpg",
-              "/static/image/caseapp2.jpg",
+              "/static/image/caseapp2.jpg"
           ]}
       ]
     };
@@ -70,7 +67,7 @@ export default {
       this.menuSelect = index;
     },
     viewCase(select,index){
-        this.$store.commit("switch",select,index)
+        this.$store.commit("open",select,index)
         console.log("我是第"+select+"组的第"+index+"张图片")
     }
   }

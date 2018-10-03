@@ -8,7 +8,9 @@
         <xcrj-slogan></xcrj-slogan>
         <xcrj-news></xcrj-news>
         <xcrj-footer></xcrj-footer>
-        <xcrj-back-top></xcrj-back-top>
+        <transition name="fade">
+            <xcrj-back-top @showBackTopFn="showBackTopFn" v-show="showHideBackTop"></xcrj-back-top>
+        </transition>
         <xcrj-case-browse v-if="false"></xcrj-case-browse>
     </div>
 </template>
@@ -28,7 +30,7 @@ import XcrjCaseBrowse from "@/components/totalCaseBrowse.vue"
 export default {
     data(){
         return{
-
+            showHideBackTop:false
         }
     },
     components:{
@@ -42,10 +44,22 @@ export default {
         XcrjNews,
         XcrjCaseBrowse,
         XcrjBackTop
+    },
+    methods:{
+        showBackTopFn(showHide){
+            this.showHideBackTop=showHide;
+            console.log(showHide)
+        }
     }
 }
 </script>
 
 <style lang="stylus" scoped>
+.fade-enter-active 
+  transition: all .8s ease;
 
+.fade-leave-active 
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+.fade-enter, .fade-leave-to
+  opacity: 0;
 </style>

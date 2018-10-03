@@ -5,6 +5,8 @@ import News from "@/pages/news/news.vue"
 import OnlineMsg from "@/pages/onlinemsg/onlinemsg.vue"
 import Service from "@/pages/service/service.vue"
 import Case  from "@/pages/case/case.vue"
+import newsList from "@/pages/news/component/newsCont.vue"
+import newsCont from "@/pages/news/component/showNews.vue"
 
 
 
@@ -23,24 +25,26 @@ export default new Router({
     {
       path: '/case',
       name: 'Case',
-      component: Case,
-      // redirect:"/case/caselist",
-      // children:[
-      //   {
-      //     path: 'caselist',
-      //     //name: 'CaseList',
-      //     component: CaseList,
-      //   },{
-      //     path: 'caselist',
-      //     //name: 'CaseList',
-      //     component: CaseList,
-      //   }
-      // ]
+      component: Case
+      
     },
     {
       path: '/news',
       name: 'News',
-      component: News
+      component: News,
+      redirect:"/news/newsList",
+      children:[
+        {
+          path: 'newsList',
+          name: 'newsList',
+          component: newsList,
+        },
+        {
+          path: 'newsCont',
+          name: 'newsCont',
+          component: newsCont,
+        }
+      ]
     },
     {
       path: '/service',

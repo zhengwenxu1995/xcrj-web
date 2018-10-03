@@ -3,7 +3,6 @@
         <div class="cont-frame">
             <ul class="features">
                 <li class="item">
-                    
                         <div class="details" >
                             <i class="iconfont icon">&#xe604;</i>
                             <transition name="size">

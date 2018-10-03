@@ -2,7 +2,7 @@
     <div class="cont">
         <xcrj-header></xcrj-header>
         <xcrj-total-carouse></xcrj-total-carouse>
-        <xcrj-news></xcrj-news>
+        <router-view></router-view>
         <xcrj-footer></xcrj-footer>
     </div>
 </template>
@@ -11,7 +11,7 @@
 import XcrjFooter from "@/components/foot.vue"
 import XcrjHeader from "@/components/navHeader.vue"
 import XcrjTotalCarouse from "@/components/totalCarouse.vue"
-import XcrjNews from "@/pages/news/component/newsCont.vue"
+
 
 export default {
     
@@ -23,7 +23,6 @@ export default {
     components:{
         XcrjHeader,
         XcrjFooter,
-        XcrjNews,
         XcrjTotalCarouse
     }
 }
