@@ -8,6 +8,9 @@
         <transition name="fade">
             <xcrj-case-browse v-if="showCaseList"></xcrj-case-browse>
         </transition>
+        <transition name="fade">
+            <xcrj-back-top @showBackTopFn="showBackTopFn" v-show="showHideBackTop"></xcrj-back-top>
+        </transition>
     </div>
 </template>
 
@@ -17,10 +20,11 @@ import XcrjHeader from "@/components/navHeader.vue"
 import XcrjTotalCarouse from "@/components/totalCarouse.vue"
 import XcrjCaseBrowse from "@/components/totalCaseBrowse.vue"
 import XcrjCaseList from "@/pages/case/component/caseList.vue"
+import XcrjBackTop from "@/components/backTop.vue"
 export default {
     data(){
         return{
-            
+            showHideBackTop:false
         }
     },
     components:{
@@ -28,9 +32,19 @@ export default {
         XcrjFooter,
         XcrjTotalCarouse,
         XcrjCaseBrowse,
-        XcrjCaseList
+        XcrjCaseList,
+        XcrjBackTop
+    },
+    methods:{
+        showBackTopFn(showHide){
+            this.showHideBackTop=showHide;
+            console.log(showHide)
+        }
     },
     computed:{
+        backTop(){
+            return this.$store.state.nav.backTop;
+        },
         showCaseList(){
             //return true;
             return this.$store.state.caseBrows.showCaseLise
@@ -38,9 +52,6 @@ export default {
     },
     watch:{
         //侦听属性
-    },
-    methods:{
-        //方法
     }
 }
 </script>

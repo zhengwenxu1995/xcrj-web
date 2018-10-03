@@ -17,7 +17,8 @@ export const navMenuModule = {
             {navName:"案例",path:"/case"},
             {navName:"新闻动态",path:"/news"},
             {navName:"在线留言",path:"/onlinemsg"}
-        ]
+        ],
+        backTop:false
      },
     //  getters:{
     //     getNowSelect(state){
@@ -35,7 +36,10 @@ export const navMenuModule = {
             state.nowSelect=select;
             // let n= window.localStorage.nowSelect;
             //state.nowSelect = window.localStorage.nowSelect;
-         }
+        },
+        backTopStatus(state,status){
+            state.backTop=status;
+        }
      }
   }
 

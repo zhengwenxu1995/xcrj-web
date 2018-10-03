@@ -1,5 +1,5 @@
 <template>
-    <div class="back-top" @click="rollback">
+    <div class="back-top" @click="rollback" >
         <i class="iconfont bt">&#xe63a;</i>
     </div>
 </template>
@@ -13,6 +13,7 @@ export default {
             showBackTop:false
         }
     },
+    
     methods:{
         rollback(){
             let scrollToptimer = setInterval(function () {
@@ -41,8 +42,9 @@ export default {
     },
     mounted(){
         window.addEventListener("scroll",this.backTop)
+
     }
-}
+};
 </script>
 
 <style lang="stylus" scoped>

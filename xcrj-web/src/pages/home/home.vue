@@ -11,7 +11,7 @@
         <transition name="fade">
             <xcrj-back-top @showBackTopFn="showBackTopFn" v-show="showHideBackTop"></xcrj-back-top>
         </transition>
-        <xcrj-case-browse v-if="false"></xcrj-case-browse>
+        <!-- <xcrj-case-browse v-if="true"></xcrj-case-browse> -->
     </div>
 </template>
 
@@ -49,6 +49,11 @@ export default {
         showBackTopFn(showHide){
             this.showHideBackTop=showHide;
             console.log(showHide)
+        }
+    },
+    computed:{
+        backTop(){
+            return this.$store.state.nav.backTop;
         }
     }
 }
