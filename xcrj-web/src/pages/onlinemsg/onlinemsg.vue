@@ -5,6 +5,9 @@
         <xcrj-msg-from></xcrj-msg-from>
         <xcrj-msg-list></xcrj-msg-list>
         <xcrj-footer></xcrj-footer>
+        <transition name="fade">
+            <xcrj-back-top @showBackTopFn="showBackTopFn" v-show="showHideBackTop"></xcrj-back-top>
+        </transition>
     </div>
 </template>
 
@@ -14,10 +17,11 @@ import XcrjHeader from "@/components/navHeader.vue"
 import XcrjTotalCarouse from "@/components/totalCarouse.vue"
 import XcrjMsgFrom from "@/pages/onlinemsg/component/leaveMsgFrom.vue"
 import XcrjMsgList from "@/pages/onlinemsg/component/msgList.vue"
+import XcrjBackTop from "@/components/backTop.vue"
 export default {
     data(){
         return{
-
+            showHideBackTop:false
         }
     },
     components:{
@@ -25,7 +29,19 @@ export default {
         XcrjFooter,
         XcrjMsgFrom,
         XcrjMsgList,
-        XcrjTotalCarouse
+        XcrjTotalCarouse,
+        XcrjBackTop
+    },
+    methods:{
+        showBackTopFn(showHide){
+            this.showHideBackTop=showHide;
+            console.log(showHide)
+        }
+    },
+    computed:{
+        backTop(){
+            return this.$store.state.nav.backTop;
+        }
     }
 }
 </script>

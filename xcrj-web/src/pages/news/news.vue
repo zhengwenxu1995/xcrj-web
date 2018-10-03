@@ -4,6 +4,9 @@
         <xcrj-total-carouse></xcrj-total-carouse>
         <router-view></router-view>
         <xcrj-footer></xcrj-footer>
+        <transition name="fade">
+            <xcrj-back-top @showBackTopFn="showBackTopFn" v-show="showHideBackTop"></xcrj-back-top>
+        </transition>
     </div>
 </template>
 
@@ -11,19 +14,30 @@
 import XcrjFooter from "@/components/foot.vue"
 import XcrjHeader from "@/components/navHeader.vue"
 import XcrjTotalCarouse from "@/components/totalCarouse.vue"
-
+import XcrjBackTop from "@/components/backTop.vue"
 
 export default {
-    
     data(){
         return{
-
+            showHideBackTop:false
         }
     },
     components:{
         XcrjHeader,
         XcrjFooter,
-        XcrjTotalCarouse
+        XcrjTotalCarouse,
+        XcrjBackTop
+    },
+    methods:{
+        showBackTopFn(showHide){
+            this.showHideBackTop=showHide;
+            console.log(showHide)
+        }
+    },
+    computed:{
+        backTop(){
+            return this.$store.state.nav.backTop;
+        }
     }
 }
 </script>
